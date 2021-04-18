@@ -12,29 +12,35 @@ import {
   Bag,
   BagContainer,
   BagStrap,
+  HeaderSpanLogo,
 } from './styles';
 
 import logo from '../../assets/baby-store-logo.svg';
 const Header = () => {
+  const navLinks = [
+    { to: '/', name: 'Home' },
+    { to: '/shop', name: 'Shop' },
+    { to: '/about-us', name: 'About Us' },
+    { to: '/testimonial', name: 'Testimonial' },
+    { to: '/contact-us', name: 'Contact Us' },
+  ];
   return (
     <HeaderContainer>
       <HeaderContentContainer>
         <HeaderSectionOneContainer>
           <HeaderLogoContainer>
-            <span
-              style={{ padding: '0 16px 0 0', height: '34px', width: '122px' }}
-            >
+            <HeaderSpanLogo>
               <HeaderLogo src={logo} alt="logo" />
-            </span>
+            </HeaderSpanLogo>
           </HeaderLogoContainer>
         </HeaderSectionOneContainer>
         <HeaderSectionTwoContainer>
           <NavLinkContainer>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/">Shop</NavLink>
-            <NavLink to="/">About Us</NavLink>
-            <NavLink to="/">Testimonial</NavLink>
-            <NavLink to="/">Contact Us</NavLink>
+            {navLinks.map(({ to, name }) => (
+              <NavLink key={name} to={to}>
+                {name}
+              </NavLink>
+            ))}
           </NavLinkContainer>
           <BagContainer>
             <Bag bagItens={2} title="View Your Shopping Cart">

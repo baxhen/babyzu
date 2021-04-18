@@ -21,7 +21,7 @@ export const HeaderSectionOneContainer = styled.div`
   height: 70px;
 `;
 export const HeaderSectionTwoContainer = styled.div`
-  width: 786px;
+  width: 803.5px;
   height: 70px;
   display: flex;
   align-items: center;
@@ -39,6 +39,11 @@ export const HeaderLogo = styled.img`
   height: 34px;
   cursor: pointer;
   line-height: 16px;
+`;
+export const HeaderSpanLogo = styled.span`
+  padding: 0 16px 0 0;
+  height: 34px;
+  width: 122px;
 `;
 
 export const NavLinkContainer = styled.div`
@@ -73,7 +78,7 @@ export const BagContainer = styled.div`
 
 export const Bag = styled.div`
   position: relative;
-  height: 28.8906px;
+  height: 29.8906px;
   width: 28.8906px;
   border: 2px solid #f9db60;
   border-radius: 0 0 5px 5px;
