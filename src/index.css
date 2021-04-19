@@ -4,3 +4,14 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+
+@font-face {
+  font-family: 'Sriracha';
+  src: local('Sriracha'),
+    url(./fonts/sriracha/Sriracha-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'),
+    url(./fonts/open-sans/OpenSans-Regular.ttf) format('truetype');
+}

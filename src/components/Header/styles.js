@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const HeaderContainer = styled.div`
-  background: none;
   height: 70px;
   width: 100%;
   position: relative;
